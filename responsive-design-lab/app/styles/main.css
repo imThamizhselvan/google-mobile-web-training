@@ -13,11 +13,11 @@
 
 /* TODO 3 - style the page */
 
-/* @media screen and (max-width: 48rem) {
+@media screen and (max-width: 48rem) {
   .container .col {
     width: 95%;
   }
-} */
+}
 
 .container {
   display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6 */
@@ -31,4 +31,12 @@
   flex: 1;
   padding: 1rem;
 }
-/* TODO 5.4 - use media query with Flexbox*/
+
+@media screen and (max-width: 48rem) {
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-flow: column;
+  }
+}
